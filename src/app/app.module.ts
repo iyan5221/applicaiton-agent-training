@@ -66,6 +66,7 @@ const routes : Routes = [
 	FormsModule,
 	ReactiveFormsModule,
 	BrowserAnimationsModule,
+	HttpClientModule,
 	ToastrModule.forRoot({ 
 		timeOut: 3000,
 		positionClass: 'toast-bottom-right',

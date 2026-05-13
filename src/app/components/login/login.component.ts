@@ -18,7 +18,7 @@ import { routerTransition } from '../../services/config/config.service';
 	host: {'[@routerTransition]': ''}
 })
 export class LoginComponent implements OnInit {
-	private loginForm : FormGroup;
+	public loginForm : FormGroup;
 	constructor(private formBuilder: FormBuilder,private router: Router, private userService:UserService,private toastr: ToastrService) { 
 		this.loginForm = this.formBuilder.group({
 			email: ['',  [Validators.required, ValidationService.emailValidator]],
@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
 
 	// Login success function
 	success(data){
+
 		if (data.code == 200) {
 			localStorage.setItem('userData', JSON.stringify(data.data));
 			this.router.navigate(['/']);
@@ -52,6 +53,3 @@ export class LoginComponent implements OnInit {
 
 }
 
-/**
- * Created By : Sangwin Gawande (https://sangw.in)
- */
