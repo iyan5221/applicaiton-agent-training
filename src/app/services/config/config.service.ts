@@ -4,7 +4,7 @@
 
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidatorFn } from '@angular/forms';
-import {trigger, state, animate, style, transition} from '@angular/core';
+import { trigger, state, animate, style, transition } from '@angular/animations';
 
 @Injectable()
 export class ConfigService {
