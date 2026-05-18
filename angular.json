@@ -88,6 +88,7 @@
     }
   },
   "cli": {
-    "defaultCollection": "@schematics/angular"
+    "defaultCollection": "@schematics/angular",
+    "analytics": false
   }
 }
