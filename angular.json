@@ -51,18 +51,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "student-management:build"
+            "buildTarget": "student-management:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "student-management:build:production"
+              "buildTarget": "student-management:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "student-management:build"
+            "buildTarget": "student-management:build"
           }
         },
         "test": {
