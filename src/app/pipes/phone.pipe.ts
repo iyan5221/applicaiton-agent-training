@@ -5,13 +5,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'phone'
+	name: 'phone',
+	standalone: true
 })
 export class PhonePipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return '+91-'+value;
-  }
+	transform(value: any, args?: any): any {
+		return '+91-'+value;
+	}
 
 }
 

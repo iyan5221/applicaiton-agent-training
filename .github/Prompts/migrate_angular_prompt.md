@@ -1,12 +1,12 @@
-Migrate this Angular 16 project to Angular 17.
+Migrate this Angular 18 project to Angular 19.
 
 Steps:
-1. Update Angular dependencies from version 16 to 17
-2. Update Angular CLI to version 17 (if required)
-3. Update TypeScript to Angular 17 compatible version (~5.2)
-4. Ensure RxJS is version 7.8+ (compatible with Angular 17)
+1. Update Angular dependencies from version 18 to 19
+2. Update Angular CLI to version 19 (if required)
+3. Update TypeScript to a version compatible with Angular 19
+4. Ensure RxJS version is compatible with Angular 19 (latest supported 7.x or updated version as required)
 5. Update zone.js to a compatible version
-6. Apply Angular 17 migration updates using Angular CLI
+6. Apply Angular 19 migration updates using Angular CLI
 7. Review and update project configuration files (angular.json, tsconfig.json, etc.) if required
 8. Replace deprecated APIs and remove unsupported usages
 9. Verify compatibility of third-party libraries and update them if required
@@ -14,7 +14,7 @@ Steps:
 11. Ensure the application builds and runs correctly
 
 Commands to consider:
-- ng update @angular/cli@17 @angular/core@17
+- ng update @angular/cli@19 @angular/core@19
 - npm install
 - ng build
 - ng serve

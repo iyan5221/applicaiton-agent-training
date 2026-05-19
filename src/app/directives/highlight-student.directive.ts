@@ -5,7 +5,8 @@
 import { Directive, ElementRef,HostListener } from '@angular/core';
 
 @Directive({
-  selector: '[appHighlightStudent]'
+	selector: '[appHighlightStudent]',
+	standalone: true
 })
 export class HighlightStudentDirective {
 

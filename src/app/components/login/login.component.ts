@@ -3,7 +3,8 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import {Validators, FormBuilder, FormGroup } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import {Validators, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes ,Router} from '@angular/router';
 import { ValidationService } from '../../services/config/config.service';
 import { UserService } from '../../services/user/user.service';
@@ -11,6 +12,8 @@ import { ToastrService } from 'ngx-toastr';
 import { routerTransition } from '../../services/config/config.service';
 
 @Component({
+	standalone: true,
+	imports: [CommonModule, ReactiveFormsModule, RouterModule],
 	selector: 'app-login',
 	templateUrl: './login.component.html',
 	styleUrls: ['./login.component.css'],

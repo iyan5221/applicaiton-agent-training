@@ -2,7 +2,8 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
  import { Component, OnInit } from '@angular/core';
- import {Validators, FormBuilder, FormGroup} from '@angular/forms';
+ import { CommonModule } from '@angular/common';
+ import {Validators, FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
  import { RouterModule, Routes ,Router,ActivatedRoute} from '@angular/router';
 
  // Services
@@ -13,6 +14,8 @@
  import { ToastrService } from 'ngx-toastr';
 
  @Component({
+ 	standalone: true,
+ 	imports: [CommonModule, ReactiveFormsModule, RouterModule],
  	selector: 'app-student-add',
  	templateUrl: './student-add.component.html',
  	styleUrls: ['./student-add.component.css'],

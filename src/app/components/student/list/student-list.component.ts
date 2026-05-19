@@ -3,13 +3,21 @@
  */
 
  import { Component, OnInit } from '@angular/core';
+ import { CommonModule } from '@angular/common';
+ import { FormsModule } from '@angular/forms';
+ import { RouterModule } from '@angular/router';
  import { ToastrService } from 'ngx-toastr';
 
  // Services
  import { StudentService } from '../../../services/student/student.service';
  import { routerTransition } from '../../../services/config/config.service';
+ import { HighlightStudentDirective } from '../../../directives/highlight-student.directive';
+ import { PhonePipe } from '../../../pipes/phone.pipe';
+ import { FilterPipe } from '../../../pipes/filter.pipe';
 
  @Component({
+ 	standalone: true,
+ 	imports: [CommonModule, FormsModule, RouterModule, HighlightStudentDirective, PhonePipe, FilterPipe],
  	selector: 'app-student-list',
  	templateUrl: './student-list.component.html',
  	styleUrls: ['./student-list.component.css'],

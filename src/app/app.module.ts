@@ -48,20 +48,8 @@ const routes : Routes = [
 ];
 
 @NgModule({
-	declarations: [
-	AppComponent,
-	StudentListComponent,
-	StudentDetailsComponent,
-	StudentAddComponent,
-	LoginComponent,
-	HomeComponent,
-	FilterPipe,
-	PhonePipe,
-	HighlightStudentDirective
-	],
 	imports: [
 	BrowserModule,
-	RouterModule,
 	RouterModule.forRoot(routes),
 	FormsModule,
 	ReactiveFormsModule,
@@ -72,6 +60,15 @@ const routes : Routes = [
 		positionClass: 'toast-bottom-right',
 		preventDuplicates: true,
 	}),
+	AppComponent,
+	StudentListComponent,
+	StudentDetailsComponent,
+	StudentAddComponent,
+	LoginComponent,
+	HomeComponent,
+	FilterPipe,
+	PhonePipe,
+	HighlightStudentDirective
 	],
 	providers: [AuthService,UserService,StudentService],
 	bootstrap: [AppComponent]
