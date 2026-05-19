@@ -3,7 +3,7 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import {Validators, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes ,Router} from '@angular/router';
 import { ValidationService } from '../../services/config/config.service';
@@ -13,7 +13,7 @@ import { routerTransition } from '../../services/config/config.service';
 
 @Component({
 	standalone: true,
-	imports: [CommonModule, ReactiveFormsModule, RouterModule],
+	imports: [ReactiveFormsModule, RouterModule],
 	selector: 'app-login',
 	templateUrl: './login.component.html',
 	styleUrls: ['./login.component.css'],

@@ -2,7 +2,7 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
  import { Component, OnInit } from '@angular/core';
- import { CommonModule } from '@angular/common';
+ 
  import {Validators, FormBuilder, FormGroup} from '@angular/forms';
  import { RouterModule, Routes ,Router,ActivatedRoute} from '@angular/router';
  import { ToastrService } from 'ngx-toastr';
@@ -13,7 +13,7 @@
 
  @Component({
  	standalone: true,
- 	imports: [CommonModule, RouterModule],
+ 	imports: [RouterModule],
  	selector: 'app-student-details',
  	templateUrl: './student-details.component.html',
  	styleUrls: ['./student-details.component.css'],

@@ -2,7 +2,7 @@
  * Created By : Sangwin Gawande (https://sangw.in)
  */
  import { Component, OnInit } from '@angular/core';
- import { CommonModule } from '@angular/common';
+ 
  import {Validators, FormBuilder, FormGroup, ReactiveFormsModule} from '@angular/forms';
  import { RouterModule, Routes ,Router,ActivatedRoute} from '@angular/router';
 
@@ -15,7 +15,7 @@
 
  @Component({
  	standalone: true,
- 	imports: [CommonModule, ReactiveFormsModule, RouterModule],
+ 	imports: [ReactiveFormsModule, RouterModule],
  	selector: 'app-student-add',
  	templateUrl: './student-add.component.html',
  	styleUrls: ['./student-add.component.css'],
